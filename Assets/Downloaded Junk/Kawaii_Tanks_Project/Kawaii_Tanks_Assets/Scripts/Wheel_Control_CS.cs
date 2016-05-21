@@ -51,11 +51,11 @@ public class Wheel_Control_CS : MonoBehaviour {
 	
 	void Update () {
 		if ( isCurrentID ) {
-			#if UNITY_ANDROID || UNITY_IPHONE
+#if UNITY_ANDROID || UNITY_IPHONE
 			float vertical = CrossPlatformInputManager.GetAxis ( "Vertical" ) ;
 			float horizontal = Mathf.Clamp ( CrossPlatformInputManager.GetAxis ( "Horizontal" ) , -turnClamp , turnClamp ) ;
-			#else
-			float vertical = Input.GetAxis ( "Vertical" ) ;
+#else
+            float vertical = 1.0f;//Input.GetAxis ( "Vertical" ) ;
 			float horizontal = Mathf.Clamp ( Input.GetAxis ( "Horizontal" ) , -turnClamp , turnClamp ) ;
 			#endif
 			leftRate = Mathf.Clamp ( -vertical - horizontal , -1.0f , 1.0f ) ;
