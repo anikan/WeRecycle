@@ -36,7 +36,7 @@ public class TrashScript : MonoBehaviour {
             //Darn incorrect.
             else
             {
-                makeBubble(incorrectBinString, binScript.gameObject);
+               // makeBubble(incorrectBinString, binScript.gameObject);
             }
             Destroy(this.gameObject, 5.0f);
 
