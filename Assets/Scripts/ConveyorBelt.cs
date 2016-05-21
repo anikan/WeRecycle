@@ -13,7 +13,7 @@ public class ConveyorBelt : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
+
 	}
 
     void OnCollisionStay(Collision other)

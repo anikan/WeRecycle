@@ -15,7 +15,7 @@ public class RandomSpawnScript : MonoBehaviour {
             Object[] batt = (Object[])Resources.LoadAll("TrashSort", typeof(GameObject));
             GameObject randomBat = (GameObject)batt[Random.Range(0, batt.Length)];
             GameObject battery = (GameObject)Instantiate(randomBat, transform.position, transform.rotation);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(2f);
         }
     }
 }
