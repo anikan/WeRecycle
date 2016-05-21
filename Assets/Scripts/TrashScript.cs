@@ -25,6 +25,8 @@ public class TrashScript : MonoBehaviour {
             //Yay match.
             if (binScript.type == this.type && isReady)
             {
+                other.GetComponentInChildren<ParticleSystem>().Play();
+
                 //Play sound
                 //Do particles
 
@@ -35,7 +37,7 @@ public class TrashScript : MonoBehaviour {
             {
                 makeBubble(incorrectBinString, binScript.gameObject);
             }
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 5.0f);
 
         }
 
