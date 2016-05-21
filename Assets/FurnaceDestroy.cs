@@ -5,15 +5,30 @@ public class FurnaceDestroy : MonoBehaviour {
     AudioSource aud;
     public ParticleSystem p;
     public GameObject lights;
+    public GameObject conveyor;
+    public GameObject successFruit;
+    int furnaceDmg;
     void Start() {
         aud = this.GetComponent<AudioSource>();
     }
-
+    void Update() 
+        {
+        if(furnaceDmg > 0) 
+            {
+            conveyor.GetComponent<ConveyorBelt>().maxSpeed = Mathf.Min(conveyor.GetComponent<ConveyorBelt>().maxSpeed - .02f,.5f);
+            furnaceDmg -= 1;
+            }
+        if(TrashScript.fruitSuccess > 0) {
+            conveyor.GetComponent<ConveyorBelt>().maxSpeed += .02f;
+           TrashScript.fruitSuccess -= 1;
+        }
+    }
     void OnCollisionEnter(Collision collision) {
         aud.Play();
         p.Play();
         StartCoroutine(flare());
         Destroy(collision.gameObject);
+        furnaceDmg += 1;
     }
     IEnumerator flare() {
         for(float i = 0; i < 1f; i += Time.deltaTime) {
