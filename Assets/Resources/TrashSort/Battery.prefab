@@ -10,10 +10,11 @@ GameObject:
   - 4: {fileID: 477586}
   - 33: {fileID: 3387278}
   - 23: {fileID: 2395268}
-  - 64: {fileID: 6469088}
   - 114: {fileID: 11444808}
   - 54: {fileID: 5431816}
   - 114: {fileID: 11497134}
+  - 65: {fileID: 6528876}
+  - 114: {fileID: 11445716}
   m_Layer: 0
   m_Name: Battery
   m_TagString: Untagged
@@ -82,8 +83,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6469088
-MeshCollider:
+--- !u!65 &6528876
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -92,8 +93,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: ea97ae3daddcc9a4985731f56a2de9b4, type: 3}
+  m_Size: {x: 0.03707108, y: 0.037071086, z: 0.11407099}
+  m_Center: {x: 0, y: 0, z: 0.057085533}
 --- !u!114 &11444808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,6 +109,20 @@ MonoBehaviour:
   highlightChildren: 1
   meshColor: {r: 1, g: 1, b: 1, a: 0.5}
   outlineColor: {r: 1, g: 1, b: 0, a: 1}
+--- !u!114 &11445716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  incorrectBinString: 
+  isReady: 1
 --- !u!114 &11497134
 MonoBehaviour:
   m_ObjectHideFlags: 1

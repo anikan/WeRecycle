@@ -10,10 +10,11 @@ GameObject:
   - 4: {fileID: 413626}
   - 33: {fileID: 3350846}
   - 23: {fileID: 2371504}
-  - 64: {fileID: 6440462}
   - 114: {fileID: 11459594}
   - 54: {fileID: 5484942}
   - 114: {fileID: 11424842}
+  - 65: {fileID: 6506600}
+  - 114: {fileID: 11410098}
   m_Layer: 0
   m_Name: Big box open 2
   m_TagString: Untagged
@@ -81,8 +82,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6440462
-MeshCollider:
+--- !u!65 &6506600
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,8 +92,22 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 42665acdfb1ea654f968b5ae79c25404, type: 3}
+  m_Size: {x: 7.6662464, y: 3.542684, z: 8.994886}
+  m_Center: {x: -0.01355207, y: -0.2654438, z: 0.21397328}
+--- !u!114 &11410098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  incorrectBinString: 
+  isReady: 1
 --- !u!114 &11424842
 MonoBehaviour:
   m_ObjectHideFlags: 1

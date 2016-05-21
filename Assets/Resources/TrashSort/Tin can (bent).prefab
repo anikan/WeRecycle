@@ -10,10 +10,11 @@ GameObject:
   - 4: {fileID: 475998}
   - 33: {fileID: 3337822}
   - 23: {fileID: 2303096}
-  - 64: {fileID: 6496894}
   - 114: {fileID: 11494572}
   - 54: {fileID: 5474240}
   - 114: {fileID: 11416642}
+  - 65: {fileID: 6580080}
+  - 114: {fileID: 11490256}
   m_Layer: 0
   m_Name: Tin can (bent)
   m_TagString: Untagged
@@ -81,8 +82,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6496894
-MeshCollider:
+--- !u!65 &6580080
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,8 +92,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 3a9ca1ade6792df40b4e53f2ca81920d, type: 3}
+  m_Size: {x: 1.6376195, y: 3.8735623, z: 1.5645772}
+  m_Center: {x: -0.0040840507, y: 0.13026267, z: 0.008626401}
 --- !u!114 &11416642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,6 +110,20 @@ MonoBehaviour:
   isTool: 0
   isActive: 0
   soundThreshold: 0.5
+--- !u!114 &11490256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  incorrectBinString: 
+  isReady: 1
 --- !u!114 &11494572
 MonoBehaviour:
   m_ObjectHideFlags: 1

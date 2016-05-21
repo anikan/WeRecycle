@@ -11,10 +11,11 @@ GameObject:
   - 33: {fileID: 3320796}
   - 23: {fileID: 2322642}
   - 95: {fileID: 9531816}
-  - 64: {fileID: 6453468}
   - 114: {fileID: 11439842}
   - 54: {fileID: 5473058}
   - 114: {fileID: 11401732}
+  - 65: {fileID: 6528066}
+  - 114: {fileID: 11418688}
   m_Layer: 0
   m_Name: Kiwi2
   m_TagString: Untagged
@@ -82,8 +83,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6453468
-MeshCollider:
+--- !u!65 &6528066
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -92,8 +93,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 351b2fdeb87d3304ab47b79e5b3fe169, type: 3}
+  m_Size: {x: 0.145556, y: 0.14555602, z: 0.057687424}
+  m_Center: {x: 0.013605049, y: 0, z: -0.012861001}
 --- !u!95 &9531816
 Animator:
   serializedVersion: 3
@@ -127,6 +128,20 @@ MonoBehaviour:
   isTool: 0
   isActive: 0
   soundThreshold: 0.5
+--- !u!114 &11418688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  incorrectBinString: 
+  isReady: 1
 --- !u!114 &11439842
 MonoBehaviour:
   m_ObjectHideFlags: 1

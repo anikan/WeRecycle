@@ -11,10 +11,11 @@ GameObject:
   - 33: {fileID: 3379142}
   - 23: {fileID: 2383710}
   - 95: {fileID: 9536800}
-  - 64: {fileID: 6467774}
   - 114: {fileID: 11484346}
   - 54: {fileID: 5476410}
   - 114: {fileID: 11474114}
+  - 65: {fileID: 6555872}
+  - 114: {fileID: 11417766}
   m_Layer: 0
   m_Name: Drg
   m_TagString: Untagged
@@ -82,8 +83,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6467774
-MeshCollider:
+--- !u!65 &6555872
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -92,8 +93,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 4b080d8ef0ed5084a8c9601ffea4d67b, type: 3}
+  m_Size: {x: 0.1510974, y: 0.15498789, z: 0.164263}
+  m_Center: {x: 0.009619529, y: -0.0026161156, z: -0.015327476}
 --- !u!95 &9536800
 Animator:
   serializedVersion: 3
@@ -111,6 +112,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11417766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  incorrectBinString: 
+  isReady: 1
 --- !u!114 &11474114
 MonoBehaviour:
   m_ObjectHideFlags: 1

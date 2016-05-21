@@ -11,10 +11,11 @@ GameObject:
   - 33: {fileID: 3304086}
   - 23: {fileID: 2369800}
   - 95: {fileID: 9559712}
-  - 64: {fileID: 6406436}
   - 114: {fileID: 11490254}
   - 54: {fileID: 5490374}
   - 114: {fileID: 11489966}
+  - 65: {fileID: 6521194}
+  - 114: {fileID: 11405034}
   m_Layer: 0
   m_Name: Ban
   m_TagString: Untagged
@@ -82,8 +83,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6406436
-MeshCollider:
+--- !u!65 &6521194
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -92,8 +93,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 815c3a099e4dd534c9fcf5344c34ad9b, type: 3}
+  m_Size: {x: 0.15733103, y: 0.09979618, z: 0.46268713}
+  m_Center: {x: -0.013666394, y: 0.000000016763808, z: 0.116143234}
 --- !u!95 &9559712
 Animator:
   serializedVersion: 3
@@ -111,6 +112,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11405034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  incorrectBinString: 
+  isReady: 1
 --- !u!114 &11489966
 MonoBehaviour:
   m_ObjectHideFlags: 1

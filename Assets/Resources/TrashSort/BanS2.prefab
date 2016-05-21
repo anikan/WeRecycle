@@ -11,10 +11,11 @@ GameObject:
   - 33: {fileID: 3396324}
   - 23: {fileID: 2399302}
   - 95: {fileID: 9567228}
-  - 64: {fileID: 6457306}
   - 114: {fileID: 11479162}
   - 54: {fileID: 5417394}
   - 114: {fileID: 11471202}
+  - 65: {fileID: 6539742}
+  - 114: {fileID: 11433466}
   m_Layer: 0
   m_Name: BanS2
   m_TagString: Untagged
@@ -82,8 +83,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6457306
-MeshCollider:
+--- !u!65 &6539742
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -92,8 +93,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 83825c55f49b66f4b848172f727f3a59, type: 3}
+  m_Size: {x: 0.124115005, y: 0.09979618, z: 0.19018088}
+  m_Center: {x: 0.00000002980232, y: 0.0000000018626456, z: 0.000000018626451}
 --- !u!95 &9567228
 Animator:
   serializedVersion: 3
@@ -111,6 +112,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11433466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  incorrectBinString: 
+  isReady: 1
 --- !u!114 &11471202
 MonoBehaviour:
   m_ObjectHideFlags: 1

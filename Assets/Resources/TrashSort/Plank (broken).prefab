@@ -10,10 +10,11 @@ GameObject:
   - 4: {fileID: 443410}
   - 33: {fileID: 3373246}
   - 23: {fileID: 2379536}
-  - 64: {fileID: 6413102}
   - 114: {fileID: 11442086}
   - 54: {fileID: 5429646}
   - 114: {fileID: 11426416}
+  - 65: {fileID: 6589328}
+  - 114: {fileID: 11451238}
   m_Layer: 0
   m_Name: Plank (broken)
   m_TagString: Untagged
@@ -81,8 +82,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6413102
-MeshCollider:
+--- !u!65 &6589328
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,8 +92,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 538dd2e0bbccced4e8518e8284147108, type: 3}
+  m_Size: {x: 13.370953, y: 0.49821088, z: 3.1506014}
+  m_Center: {x: 0.54076505, y: 0.019527033, z: 0.15321845}
 --- !u!114 &11426416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,6 +124,20 @@ MonoBehaviour:
   highlightChildren: 1
   meshColor: {r: 1, g: 1, b: 1, a: 0.5}
   outlineColor: {r: 1, g: 1, b: 0, a: 1}
+--- !u!114 &11451238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  incorrectBinString: 
+  isReady: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

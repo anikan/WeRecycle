@@ -11,10 +11,11 @@ GameObject:
   - 33: {fileID: 3323646}
   - 23: {fileID: 2308014}
   - 95: {fileID: 9559668}
-  - 64: {fileID: 6445590}
   - 114: {fileID: 11430086}
   - 54: {fileID: 5455998}
   - 114: {fileID: 11441192}
+  - 65: {fileID: 6546168}
+  - 114: {fileID: 11407856}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -82,8 +83,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6445590
-MeshCollider:
+--- !u!65 &6546168
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -92,8 +93,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 495f9484a5a87424b8c2748846179687, type: 3}
+  m_Size: {x: 0.19999999, y: 0.20000003, z: 0.18217143}
+  m_Center: {x: 0, y: 0, z: 0.015969697}
 --- !u!95 &9559668
 Animator:
   serializedVersion: 3
@@ -111,6 +112,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11407856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  incorrectBinString: 
+  isReady: 1
 --- !u!114 &11430086
 MonoBehaviour:
   m_ObjectHideFlags: 1
