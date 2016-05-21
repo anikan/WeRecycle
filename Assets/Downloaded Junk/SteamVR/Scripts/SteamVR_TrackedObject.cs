@@ -87,7 +87,6 @@ public class SteamVR_TrackedObject : MonoBehaviour
 	void OnDisable()
 	{
 		SteamVR_Utils.Event.Remove("new_poses", OnNewPoses);
-		isValid = false;
 	}
 
 	public void SetDeviceIndex(int index)
