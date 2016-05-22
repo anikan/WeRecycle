@@ -48,8 +48,7 @@ public class TrashScript : MonoBehaviour {
                 vives[i].DisconnectIfEqual(this.gameObject);
             }
 
-            Destroy(this.gameObject, 5.0f);
-
+            StartCoroutine(destroyInTime(5.0f));
         }
 
     }
@@ -77,5 +76,18 @@ public class TrashScript : MonoBehaviour {
 
         bubble.transform.SetParent(parent.transform, true);
         bubble.transform.localPosition = offset;
+    }
+
+    IEnumerator destroyInTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        GrabScriptVive[] vives = OverallStatus.playerCamera.transform.parent.GetComponentsInChildren<GrabScriptVive>();
+
+        for (int i = 0; i < vives.Length; i++)
+        {
+            vives[i].DisconnectIfEqual(this.gameObject);
+        }
+
+        Destroy(this.gameObject);
     }
 }
