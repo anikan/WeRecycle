@@ -6,6 +6,7 @@ public class CompactTrash : MonoBehaviour {
     public GameObject platform;
     public GameObject animControl;
     public AudioClip[] toPlay;
+    public ParticleSystem p;
 	// Use this for initialization
 	void Start () {
 	
@@ -74,8 +75,10 @@ public class CompactTrash : MonoBehaviour {
             a.Play();
         }
         else if(c.tag == "Battery") {
+
             a.clip = toPlay[2];
             a.Play();
+            p.Play();
         }
         else if(c.tag == "Plastic") {
             a.clip = toPlay[3];

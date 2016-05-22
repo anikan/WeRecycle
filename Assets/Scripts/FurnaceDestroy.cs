@@ -16,13 +16,13 @@ public class FurnaceDestroy : MonoBehaviour {
         {
         if(furnaceDmg > 0) 
             {
-            conveyor.GetComponent<ConveyorBelt>().maxSpeed = Mathf.Max(conveyor.GetComponent<ConveyorBelt>().maxSpeed - .02f,.25f);
-            spawn.GetComponent<RandomSpawnScript>().spawnRate = Mathf.Min(spawn.GetComponent<RandomSpawnScript>().spawnRate + .1f,2f);
+            conveyor.GetComponent<ConveyorBelt>().maxSpeed = Mathf.Max(conveyor.GetComponent<ConveyorBelt>().maxSpeed - .02f,.5f);
+            spawn.GetComponent<RandomSpawnScript>().spawnRate = Mathf.Min(spawn.GetComponent<RandomSpawnScript>().spawnRate + .05f,2f);
             furnaceDmg -= 1;
             }
         if(TrashScript.fruitSuccess > 0) {
             conveyor.GetComponent<ConveyorBelt>().maxSpeed += .02f;
-            spawn.GetComponent<RandomSpawnScript>().spawnRate = Mathf.Max(spawn.GetComponent<RandomSpawnScript>().spawnRate - .1f, .2f);
+            spawn.GetComponent<RandomSpawnScript>().spawnRate = Mathf.Max(spawn.GetComponent<RandomSpawnScript>().spawnRate - .05f, .2f);
            TrashScript.fruitSuccess -= 1;
         }
     }
