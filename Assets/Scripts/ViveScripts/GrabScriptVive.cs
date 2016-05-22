@@ -144,20 +144,27 @@ public class GrabScriptVive : MonoBehaviour {
   }
 
 
-  /// <summary>
-  /// Disconnects the object attached to this hand.
-  /// </summary>
-  /// <returns>The rigidbody of the previously connected object.</returns>
-  public Rigidbody Disconnect() {
-    currentlySelectedObject.GetComponent<GrabbableVive>().isActive = false;
+    /// <summary>
+    /// Disconnects the object attached to this hand.
+    /// </summary>
+    /// <returns>The rigidbody of the previously connected object.</returns>
+    public Rigidbody Disconnect() {
+        currentlySelectedObject.GetComponent<GrabbableVive>().isActive = false;
 
-    isGrabbing = false;
+        isGrabbing = false;
 
-    //var go = joint.gameObject;
-    Rigidbody rigidbody = joint.gameObject.GetComponent<Rigidbody>();
-    Object.Destroy(joint);
-    joint = null;
-    return rigidbody;
+        //var go = joint.gameObject;
+        if(joint == null) { Debug.Log("Joint Null"); return null; }
+        if(joint.gameObject != null) {
+            Rigidbody rigidbody = joint.gameObject.GetComponent<Rigidbody>();
+            Object.Destroy(joint);
+            joint = null;
+            return rigidbody;
+        }
+        else {
+            joint = null;
+        }
+        return null; //new Rigidbody();
   }
 
     /// <summary>

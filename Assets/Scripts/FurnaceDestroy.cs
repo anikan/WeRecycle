@@ -15,7 +15,7 @@ public class FurnaceDestroy : MonoBehaviour {
         {
         if(furnaceDmg > 0) 
             {
-            conveyor.GetComponent<ConveyorBelt>().maxSpeed = Mathf.Min(conveyor.GetComponent<ConveyorBelt>().maxSpeed - .02f,.5f);
+            conveyor.GetComponent<ConveyorBelt>().maxSpeed = Mathf.Max(conveyor.GetComponent<ConveyorBelt>().maxSpeed - .02f,.25f);
             furnaceDmg -= 1;
             }
         if(TrashScript.fruitSuccess > 0) {

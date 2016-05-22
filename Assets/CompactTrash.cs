@@ -63,7 +63,9 @@ public class CompactTrash : MonoBehaviour {
             }
             yield return null;
         }
-        GetComponent<AudioSource>().Play();
+        if(c.tag == "Fruit") {
+            GetComponent<AudioSource>().Play();
+        }
        // animControl.GetComponent<Animator>().StopPlayback();
     }
     IEnumerator crusher() {
