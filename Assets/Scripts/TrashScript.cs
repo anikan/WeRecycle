@@ -8,9 +8,13 @@ public class TrashScript : MonoBehaviour {
     public bool isReady = true;
 
     public static int fruitSuccess;
-	// Use this for initialization
-	void Start () {
-	
+
+
+    public AudioClip[] toPlay;
+    AudioSource a;
+    // Use this for initialization
+    void Start () {
+        a = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -31,6 +35,9 @@ public class TrashScript : MonoBehaviour {
                 OverallStatus.overallStatusInstance.onCorrectInput();
 
                 fruitSuccess += 1;
+            a.clip = toPlay[0];
+                a.volume = .5f;
+                a.Play();
                 //Play sound
                 //Do particles
 
@@ -40,7 +47,10 @@ public class TrashScript : MonoBehaviour {
             else
             {
                 OverallStatus.overallStatusInstance.onIncorrectInput(incorrectBinString);
-               // makeBubble(incorrectBinString, binScript.gameObject);
+                a.clip = toPlay[1];
+                a.volume = .2f;
+                a.Play();
+                // makeBubble(incorrectBinString, binScript.gameObject);
             }
 
             GrabScriptVive[] vives = OverallStatus.playerCamera.transform.parent.GetComponentsInChildren<GrabScriptVive>();
