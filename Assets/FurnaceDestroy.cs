@@ -34,12 +34,12 @@ public class FurnaceDestroy : MonoBehaviour {
         for(float i = 0; i < 1f; i += Time.deltaTime) {
             lights.GetComponent<Light>().intensity = Mathf.Lerp(0, 3, i / 1f);
             yield return null;
-            Debug.Log(lights.GetComponent<Light>().intensity);
+            //Debug.Log(lights.GetComponent<Light>().intensity);
         }
         for(float i = 0; i < 1f; i += Time.deltaTime) {
             lights.GetComponent<Light>().intensity = Mathf.Lerp(3, 0, i / 1f);
             yield return null;
-            Debug.Log(lights.GetComponent<Light>().intensity);
+           // Debug.Log(lights.GetComponent<Light>().intensity);
         }
         yield return null;
     }
