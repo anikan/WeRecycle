@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  incorrectBinString: 
+  incorrectBinString: Small Branches should be recycled.
   isReady: 1
 --- !u!1001 &100100000
 Prefab:

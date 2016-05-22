@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  incorrectBinString: 
+  incorrectBinString: Plastic Bags should be trashed.
   isReady: 1
 --- !u!114 &11486208
 MonoBehaviour:

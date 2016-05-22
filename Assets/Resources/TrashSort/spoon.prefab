@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  incorrectBinString: 
+  incorrectBinString: Used utensils should be trashed.
   isReady: 1
 --- !u!1001 &100100000
 Prefab:

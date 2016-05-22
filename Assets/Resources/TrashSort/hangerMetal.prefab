@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  incorrectBinString: 
+  incorrectBinString: Hangers should be trashed.
   isReady: 1
 --- !u!1001 &100100000
 Prefab:

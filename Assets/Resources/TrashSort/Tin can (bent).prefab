@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  incorrectBinString: 
+  incorrectBinString: Tin cans should be recycled.
   isReady: 1
 --- !u!114 &11494572
 MonoBehaviour:

@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  incorrectBinString: 
+  incorrectBinString: Cardboard should be recyclable.
   isReady: 1
 --- !u!114 &11424842
 MonoBehaviour:

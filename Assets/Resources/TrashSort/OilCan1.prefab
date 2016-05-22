@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  incorrectBinString: 
+  incorrectBinString: Plastic bottles should be recycled.
   isReady: 1
 --- !u!1001 &100100000
 Prefab:
