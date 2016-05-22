@@ -1,51 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &156858
+--- !u!1 &159432
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 471258}
-  - 33: {fileID: 3315948}
-  - 23: {fileID: 2302640}
-  - 95: {fileID: 9511426}
-  - 114: {fileID: 11495358}
-  - 54: {fileID: 5408210}
-  - 114: {fileID: 11438090}
-  - 65: {fileID: 6555390}
-  - 114: {fileID: 11469546}
+  - 4: {fileID: 406344}
+  - 33: {fileID: 3323430}
+  - 23: {fileID: 2314220}
+  - 95: {fileID: 9540788}
+  - 54: {fileID: 5444638}
+  - 65: {fileID: 6548570}
+  - 114: {fileID: 11497432}
+  - 114: {fileID: 11417102}
+  - 114: {fileID: 11472154}
   m_Layer: 0
-  m_Name: Apricot
+  m_Name: hangerMetal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &471258
+--- !u!4 &406344
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156858}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.010872, y: -0.053638536, z: 0.24428882}
-  m_LocalScale: {x: 0.25236288, y: 0.25236288, z: 0.25236288}
+  m_GameObject: {fileID: 159432}
+  m_LocalRotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+  m_LocalPosition: {x: 205.66, y: 0.972, z: 345.002}
+  m_LocalScale: {x: 0.3131281, y: 0.3131281, z: 0.3131281}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2302640
+--- !u!23 &2314220
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156858}
+  m_GameObject: {fileID: 159432}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 867be9120fec6524586e24423fb9efdc, type: 2}
+  - {fileID: 2100000, guid: 7b2ea8b33fbb10c4d8eded064cfb3d4c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -61,19 +61,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3315948
+--- !u!33 &3323430
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156858}
-  m_Mesh: {fileID: 4300000, guid: 4f0640fd73ce2bb43b8523306e359970, type: 3}
---- !u!54 &5408210
+  m_GameObject: {fileID: 159432}
+  m_Mesh: {fileID: 4300000, guid: 2a2cabb0ea4f54940a7f99f1fed430cc, type: 3}
+--- !u!54 &5444638
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156858}
+  m_GameObject: {fileID: 159432}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -83,27 +83,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6555390
+--- !u!65 &6548570
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156858}
+  m_GameObject: {fileID: 159432}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.19999999, y: 0.18959308, z: 0.18217143}
-  m_Center: {x: 0, y: 0.0052034794, z: 0.015969712}
---- !u!95 &9511426
+  m_Size: {x: 0.6276255, y: 0.4254104, z: -0.05618563}
+  m_Center: {x: 0.0138881, y: -0.04028463, z: -0.01537811}
+--- !u!95 &9540788
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156858}
+  m_GameObject: {fileID: 159432}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 4f0640fd73ce2bb43b8523306e359970, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 2a2cabb0ea4f54940a7f99f1fed430cc, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -112,12 +112,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11438090
+--- !u!114 &11417102
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156858}
+  m_GameObject: {fileID: 159432}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cff5926d17f8fb54d9b996b347beafec, type: 3}
@@ -128,26 +128,12 @@ MonoBehaviour:
   isTool: 0
   isActive: 0
   soundThreshold: 0.5
---- !u!114 &11469546
+--- !u!114 &11472154
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 2
-  incorrectBinString: Fruit should be composted
-  isReady: 1
---- !u!114 &11495358
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156858}
+  m_GameObject: {fileID: 159432}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c2c336bc29e52745a71d3b6152c3f74, type: 3}
@@ -156,6 +142,20 @@ MonoBehaviour:
   highlightChildren: 1
   meshColor: {r: 1, g: 1, b: 1, a: 0.5}
   outlineColor: {r: 1, g: 1, b: 0, a: 1}
+--- !u!114 &11497432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8110c681d2f0f0a44887c74e53c0f13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  incorrectBinString: 
+  isReady: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -165,5 +165,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 156858}
+  m_RootGameObject: {fileID: 159432}
   m_IsPrefabParent: 1
