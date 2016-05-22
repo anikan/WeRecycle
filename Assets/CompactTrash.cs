@@ -63,7 +63,8 @@ public class CompactTrash : MonoBehaviour {
             }
             yield return null;
         }
-        animControl.GetComponent<Animator>().StopPlayback();
+        GetComponent<AudioSource>().Play();
+       // animControl.GetComponent<Animator>().StopPlayback();
     }
     IEnumerator crusher() {
        // .5 --> -1.4
