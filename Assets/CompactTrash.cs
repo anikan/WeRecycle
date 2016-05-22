@@ -5,6 +5,7 @@ public class CompactTrash : MonoBehaviour {
     public float crushSize = 0f;
     public GameObject platform;
     public GameObject animControl;
+    public AudioClip[] toPlay;
 	// Use this for initialization
 	void Start () {
 	
@@ -63,8 +64,22 @@ public class CompactTrash : MonoBehaviour {
             }
             yield return null;
         }
+        AudioSource a = GetComponent<AudioSource>();
         if(c.tag == "Fruit") {
-            GetComponent<AudioSource>().Play();
+            a.clip = toPlay[0];
+            a.Play();
+        }
+        else if(c.tag == "Metal") {
+            a.clip = toPlay[1];
+            a.Play();
+        }
+        else if(c.tag == "Battery") {
+            a.clip = toPlay[2];
+            a.Play();
+        }
+        else if(c.tag == "Plastic") {
+            a.clip = toPlay[3];
+            a.Play();
         }
        // animControl.GetComponent<Animator>().StopPlayback();
     }

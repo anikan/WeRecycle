@@ -21,7 +21,7 @@ public class GrabScriptVive : MonoBehaviour {
   //Keeps track of whether an object is being dragged, don't highlight things if you
   //are currently dragging.
   public bool isGrabbing = false;
-
+    //private bool single = false;
   void Awake() {
     trackedObj = GetComponent<SteamVR_TrackedObject>();
   }
@@ -31,7 +31,7 @@ public class GrabScriptVive : MonoBehaviour {
     var device = SteamVR_Controller.Input((int)trackedObj.index);
 
     if(currentlySelectedObject != null) {
-
+            //Debug.Log(currentlySelectedObject.name);
       if(currentlySelectedObject.GetComponent<GrabbableVive>()) {
         //Start grabbing. Update: No longer on GetTouchDown allowing for "sticky" hands. Though the sticky bug exists, with too slow collision detection.
         if(joint == null && device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger)) {

@@ -17,7 +17,7 @@ GameObject:
   - 114: {fileID: 11490256}
   m_Layer: 0
   m_Name: Tin can (bent)
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
