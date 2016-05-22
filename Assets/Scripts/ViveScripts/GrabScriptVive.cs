@@ -159,4 +159,16 @@ public class GrabScriptVive : MonoBehaviour {
     joint = null;
     return rigidbody;
   }
+
+    /// <summary>
+    /// Disconnects the object attached to this hand.
+    /// </summary>
+    /// <returns>The rigidbody of the previously connected object.</returns>
+    public void DisconnectIfEqual(GameObject potentialObject)
+    {
+        if (potentialObject == currentlySelectedObject)
+        {
+            Disconnect();
+        }
+    }
 }

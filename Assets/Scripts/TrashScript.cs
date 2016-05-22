@@ -38,6 +38,7 @@ public class TrashScript : MonoBehaviour {
             {
                // makeBubble(incorrectBinString, binScript.gameObject);
             }
+            OverallStatus.playerCamera.GetComponentInChildren<GrabScriptVive>().DisconnectIfEqual(this.gameObject);
             Destroy(this.gameObject, 5.0f);
 
         }
