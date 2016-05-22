@@ -20,6 +20,12 @@ public class OverallStatus : MonoBehaviour {
     public Text errorText;
     public Text scoreText;
 
+    public Light tvLight;
+
+    public Color defaultColor = Color.white;
+    public Color goodColor = Color.green;
+    public Color badColor = Color.red;
+
     public static int numSorted = 0;
     public static int numMissed = 0;
     public static int numIncorrect = 0;
@@ -74,19 +80,25 @@ public class OverallStatus : MonoBehaviour {
 
     IEnumerator showCorrect()
     {
+        tvLight.color = goodColor;
         correctGameObject.SetActive(true);
         yield return new WaitForSeconds(1.0f);
         correctGameObject.SetActive(false);
+        tvLight.color = defaultColor;
     }
 
     IEnumerator showIncorrect(string errorString)
     {
         incorrectGameObject.SetActive(true);
+        tvLight.color = badColor;
+
         errorText.text = errorString;
         errorText.gameObject.SetActive(true);
         yield return new WaitForSeconds(5.0f);
         incorrectGameObject.SetActive(false);
         errorText.gameObject.SetActive(false);
+        tvLight.color = defaultColor;
+
     }
 
     void resetState()
@@ -95,6 +107,8 @@ public class OverallStatus : MonoBehaviour {
         incorrectGameObject.SetActive(false);
         errorText.gameObject.SetActive(false);
         defaultImageGameObject.SetActive(true);
+        tvLight.color = defaultColor;
+
     }
 
 

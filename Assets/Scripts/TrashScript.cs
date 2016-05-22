@@ -6,6 +6,7 @@ public class TrashScript : MonoBehaviour {
     public BinType type;
     public string incorrectBinString = "";
     public bool isReady = true;
+
     public static int fruitSuccess;
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,7 @@ public class TrashScript : MonoBehaviour {
                 other.GetComponentInChildren<ParticleSystem>().Play();
 
                 OverallStatus.overallStatusInstance.onCorrectInput();
+
                 fruitSuccess += 1;
                 //Play sound
                 //Do particles
