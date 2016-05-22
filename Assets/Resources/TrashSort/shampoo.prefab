@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  incorrectBinString: 
+  incorrectBinString: Plastic bottles should be recycled.
   isReady: 1
   toPlay:
   - {fileID: 8300000, guid: ae8cbf27c0c6a6342a47481539662f23, type: 3}
