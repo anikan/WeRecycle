@@ -81,6 +81,10 @@ public class CompactTrash : MonoBehaviour {
             a.clip = toPlay[3];
             a.Play();
         }
+        else if(c.tag == "Wood") {
+            a.clip = toPlay[4];
+            a.Play();
+        }
        // animControl.GetComponent<Animator>().StopPlayback();
     }
     IEnumerator crusher() {

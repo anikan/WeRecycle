@@ -7,6 +7,9 @@ TagManager:
   - Fruit
   - Fire
   - Metal
+  - Plastic
+  - Battery
+  - Wood
   layers:
   - Default
   - TransparentFX
