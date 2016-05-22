@@ -27,6 +27,7 @@ public class TrashScript : MonoBehaviour {
             {
                 other.GetComponentInChildren<ParticleSystem>().Play();
 
+                OverallStatus.overallStatusInstance.onCorrectInput();
                 fruitSuccess += 1;
                 //Play sound
                 //Do particles
@@ -36,9 +37,17 @@ public class TrashScript : MonoBehaviour {
             //Darn incorrect.
             else
             {
+                OverallStatus.overallStatusInstance.onIncorrectInput(incorrectBinString);
                // makeBubble(incorrectBinString, binScript.gameObject);
             }
-            OverallStatus.playerCamera.GetComponentInChildren<GrabScriptVive>().DisconnectIfEqual(this.gameObject);
+
+            GrabScriptVive[] vives = OverallStatus.playerCamera.transform.parent.GetComponentsInChildren<GrabScriptVive>();
+
+            for (int i =0; i< vives.Length; i++)
+            {
+                vives[i].DisconnectIfEqual(this.gameObject);
+            }
+
             Destroy(this.gameObject, 5.0f);
 
         }

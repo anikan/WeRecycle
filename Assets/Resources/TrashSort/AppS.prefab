@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  incorrectBinString: 
+  incorrectBinString: Fruit should be composted
   isReady: 1
 --- !u!1001 &100100000
 Prefab:
